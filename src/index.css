@@ -9,6 +9,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  @apply bg-fivety pb-10;
+}
+
 .scrollable {
   @apply overflow-x-scroll pb-2;
 }

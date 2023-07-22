@@ -1,6 +1,6 @@
 const PlanCard = () => {
   return (
-    <div className="rounded-xl shadow-md bg-white py-4 pl-4 pr-[3em] whitespace-nowrap">
+    <div className="rounded-xl  bg-white py-4 pl-4 pr-[3em] whitespace-nowrap">
       <div className="w-[3.5em] h-[3.5em] bg-slate-200 rounded-full"></div>
 
       <div className="my-4">

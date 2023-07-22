@@ -9,9 +9,11 @@ import Logo from "/assets/smartphone.png";
 // Component
 import Header from "../components/Header";
 import InformDashboardCard from "../components/InformDashboardCard";
+import Divider from "../components/Divider";
 import PlanCard from "../components/PlanCard";
 import TabGoals from "../components/Tab Goals/TabGoals";
-import Divider from "../components/Divider";
+import CardHistory from "../components/CardHistory";
+import CardHistoryGroup from "../components/CardHistoryGroup";
 
 const Dashboard = () => {
   return (
@@ -32,7 +34,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <section className="px-4">
+      <div className="px-4">
         <Divider title="Goals" />
         <TabGoals />
 
@@ -41,7 +43,18 @@ const Dashboard = () => {
           <PlanCard />
           <PlanCard />
         </div>
-      </section>
+      </div>
+
+      <div className="px-4">
+        <Divider title="History" />
+
+        <div className="flex gap-4 pl-1">
+          <div className="w-full bg-white rounded-xl p-3 flex flex-col gap-6 pt-3">
+            <CardHistoryGroup date="Today, 31 Mar 2023" />
+            <CardHistoryGroup date="Today, 31 Mar 2023" />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
