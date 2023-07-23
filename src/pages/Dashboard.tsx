@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // Icon
-import { BsBell } from "react-icons/bs";
+// import { BsBell } from "react-icons/bs";
 
 // Image
-import Logo from "/assets/smartphone.png";
+// import Logo from "/assets/smartphone.png";
 
 // Component
 import Header from "../components/Header";
@@ -12,7 +12,6 @@ import InformDashboardCard from "../components/InformDashboardCard";
 import Divider from "../components/Divider";
 import PlanCard from "../components/PlanCard";
 import TabGoals from "../components/Tab Goals/TabGoals";
-import CardHistory from "../components/CardHistory";
 import CardHistoryGroup from "../components/CardHistoryGroup";
 
 const Dashboard = () => {
@@ -29,7 +28,7 @@ const Dashboard = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-2 mt-8 translate-y-[25px]">
-          <InformDashboardCard title="Incomes" price="200.000" />
+          <InformDashboardCard title="Incomes" price="12.000.000" />
           <InformDashboardCard title="Spending" price="200.000" />
         </div>
       </div>
@@ -38,7 +37,7 @@ const Dashboard = () => {
         <Divider title="Goals" />
         <TabGoals />
 
-        <div className="flex gap-4 scrollable pl-1">
+        <div className="flex flex-auto gap-4 scrollable pl-1">
           <PlanCard />
           <PlanCard />
           <PlanCard />

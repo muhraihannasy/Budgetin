@@ -1,6 +1,10 @@
 import CardHistory from "./CardHistory";
 
-const CardHistoryGroup = ({ date }) => {
+interface CardHistoryGroupInterface {
+  date: string;
+}
+
+const CardHistoryGroup: React.FC<CardHistoryGroupInterface> = ({ date }) => {
   return (
     <div>
       <h2 className="text-sm text-slate-500">{date}</h2>
